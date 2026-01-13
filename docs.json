@@ -1,13 +1,13 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Estizee",
   "colors": {
     "primary": "#003249",
     "light": "#007EA7",
     "dark": "#003249"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/images/ChatGPTImageNov19,2025,02_53_45PM.png",
   "navigation": {
     "tabs": [
       {
