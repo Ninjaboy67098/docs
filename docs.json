@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Mint Starter Kit",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#003249",
+    "light": "#007EA7",
+    "dark": "#003249"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -83,10 +83,7 @@
       ]
     }
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
+  "logo": "/images/ChatGPTImageNov19,2025,02_53_45PM.png",
   "navbar": {
     "links": [
       {
