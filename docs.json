@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Estizee",
   "colors": {
-    "primary": "#003249",
+    "primary": "#0e1c32",
     "light": "#007EA7",
-    "dark": "#003249"
+    "dark": "#0e1c32"
   },
   "favicon": "/images/ChatGPTImageNov19,2025,02_53_45PM.png",
   "navigation": {
