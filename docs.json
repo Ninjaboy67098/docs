@@ -13,11 +13,13 @@
         {
           "anchor": "Documentation",
           "icon": "book-open-cover",
+          "hidden": true,
           "href": "https://mintlify.com/docs"
         },
         {
           "anchor": "Blog",
           "icon": "newspaper",
+          "hidden": true,
           "href": "https://mintlify.com/blog"
         }
       ]
@@ -29,9 +31,10 @@
           {
             "group": "Getting started",
             "pages": [
-              "index",
+              "introduction",
               "system-overview",
-              "development"
+              "guides/getting-started/business-setup",
+              "create-your-first-quote"
             ]
           },
           {
