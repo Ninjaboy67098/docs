@@ -30,7 +30,7 @@
             "group": "Getting started",
             "pages": [
               "index",
-              "quickstart",
+              "system-overview",
               "development"
             ]
           },
