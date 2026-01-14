@@ -1,78 +1,202 @@
 ---
 title: "System Overview"
-description: "Start building awesome documentation in minutes"
+description: "Here is the place you will find how Estizee is structured."
 ---
 
-## Get started in three steps
+## How Estizee is Structured
 
-Get your documentation site running locally and make your first customization.
+**Estizee** is a modular, workflow-driven platform where every feature is connected.\
+At its core, Estizee follows the natural lifecycle of a service job—from **estimate to payment**—while giving administrators full control over pricing, scheduling, and operations.
 
-### Step 1: Set up your local environment
+The system is composed of five main layers:
 
-<AccordionGroup>
-  <Accordion title="Clone your docs locally" icon="copy">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
+1. **Estimation & Quotes**
+2. **Jobs & Scheduling**
+3. **Invoices & Payments**
+4. **Customers & Communication**
+5. **Admin & Business Settings**
 
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
-  </Accordion>
-  <Accordion title="Start the preview server" icon="rectangle-terminal">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
+Each layer builds on the previous one.
 
-    <Tip>
-      Your preview updates automatically as you edit files.
-    </Tip>
-  </Accordion>
-</AccordionGroup>
+## Job Lifecycle Overview
 
-### Step 2: Deploy your changes
+Every service request in Estizee follows a defined lifecycle to ensure consistency, automation, and traceability.
+
+### **Typical lifecycle flow:**
 
 <AccordionGroup>
-  <Accordion title="Install our GitHub app" icon="github">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
+  <Accordion title="Estimate Created" defaultOpen="false">
+    A quote is generated using Turbo or Advanced pricing logic.
   </Accordion>
-  <Accordion title="Update your site name and colors" icon="palette">
-    For a first change, let's update the name and colors of your docs site.
-
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
-
-    <Tip>
-      Try changing the primary color to see an immediate difference!
-    </Tip>
+  <Accordion title="Quote Sent / Shared" defaultOpen>
+    Quotes can be shared via PDF, email, or SMS.
+  </Accordion>
+  <Accordion title="Quote Approved" defaultOpen>
+    The customer approves the quote (manually or through the customer portal).
+  </Accordion>
+  <Accordion title="Job Scheduled" defaultOpen>
+    The job is assigned a date, time window, and optionally a team member.
+  </Accordion>
+  <Accordion title="Job Completed" defaultOpen>
+    The job is marked as completed in the system.
+  </Accordion>
+  <Accordion title="Invoice Generated" defaultOpen>
+    Invoices are automatically created from approved quotes.
+  </Accordion>
+  <Accordion title="Payment Collected" defaultOpen>
+    The customer pays online via Stripe or via configured offline methods.
+  </Accordion>
+  <Accordion title="Follow-ups & Reminders" defaultOpen>
+    1. Automated reminders and future scheduling prompts are triggered.
   </Accordion>
 </AccordionGroup>
-
-### Step 3: Go live
-
-<Accordion title="Publish your docs" icon="rocket">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
-
-## Next steps
-
-Now that you have your docs running, explore these key features:
 
 <CardGroup cols={2}>
-  <Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-    Learn MDX syntax and start writing your documentation.
-  </Card>
-  <Card title="Customize style" icon="palette" href="/essentials/settings">
-    Make your docs match your brand perfectly.
-  </Card>
-  <Card title="Add code examples" icon="square-code" href="/essentials/code">
-    Include syntax-highlighted code blocks.
-  </Card>
-  <Card title="API documentation" icon="code" href="/api-reference/introduction">
-    Auto-generate API docs from OpenAPI specs.
-  </Card>
+  
 </CardGroup>
+
+1. This lifecycle ensures no step is skipped and no revenue is lost.
+
+## Core Modules Breakdown
+
+### 1. Estimator & Quotes
+
+The Estimator is the foundation of Estizee.
+
+- Turbo Quotes for fast, simplified pricing
+- Advanced Quotes for detailed, rule-based pricing
+- Dynamic surcharges based on job conditions
+- Optional admin override using hourly rates
+- Automatic job description generation
+
+Quotes in Estizee are structured data—not just prices—allowing them to drive scheduling, invoicing, and reporting.
+
+### 2. Jobs & Scheduling
+
+Jobs represent approved work ready to be performed.
+
+- Calendar-based scheduling
+- Open and blocked time slots
+- Team or employee assignment
+- Job status tracking
+- Calendar reminders and notifications
+
+Scheduling is intentionally separated from quoting to prevent premature commitments.
+
+### 3. Invoices & Payments
+
+Invoices are automatically generated once a job reaches completion.
+
+- Quote-to-invoice conversion
+- Stripe payment integration
+- Payment status tracking
+- Partial or manual payments (if enabled)
+- Paid-job confirmation triggers
+
+This guarantees billing accuracy and eliminates pricing discrepancies.
+
+### 4. Customers & Communication
+
+Each customer in Estizee has a centralized profile.
+
+- Contact information
+- Property details
+- Quote, job, and invoice history
+- Communication preferences
+- Automated SMS and email notifications
+
+All customer interactions are tied to real jobs and transactions.
+
+### 5. Admin & Business Settings
+
+Admins define how Estizee operates.
+
+- Business profile and branding
+- Base rates and pricing goals
+- Residential and commercial pricing rules
+- Notification and reminder settings
+- Team management
+- Calendar and availability rules
+- Coupons and promotions
+
+These settings control the logic used throughout the platform.
+
+## Navigation Structure
+
+Estizee uses a dual navigation system to separate daily operations from administrative tasks.
+
+### Bottom Navigation (Daily Operations)
+
+- **Home** – Overview and quick actions
+- **Calendar** – Scheduling and availability
+- **Jobs** – Active and completed jobs
+- **Invoices** – Billing and payments
+- **Settings** – Business configuration
+
+### Header / Menu Navigation (Administration)
+
+- Admin
+- Analytics
+- Ads Management
+- Online Booking Page
+- Inventory
+- Asset Tracking
+- Support
+- Feedback
+- Pricing
+
+This structure keeps everyday workflows fast and uncluttered.
+
+## Data Flow Overview
+
+Estizee is fully data-driven.
+
+- Quotes generate structured job data
+- Jobs inherit approved pricing and service details
+- Invoices inherit quote data automatically
+- Payments update job and customer status
+- Notifications respond to lifecycle events
+
+Data flows in one direction—clean, consistent, and auditable.
+
+## Automation & Safeguards
+
+Estizee includes built-in safeguards to prevent operational errors:
+
+- Jobs cannot be scheduled without quote approval
+- Invoices cannot be modified after payment
+- Pricing rules prevent undercharging
+- Status transitions are controlled
+- Admin overrides are tracked
+
+These safeguards ensure consistency at scale.
+
+## Built for Real Service Businesses
+
+Estizee is not a generic CRM.\
+It is purpose-built for **service businesses that need speed, accuracy, and automation—without operational chaos**.
+
+Flexible where it should be. Strict where it must be.
+
+## Next Steps
+
+Continue with:
+
+- **Core Concepts (Quotes vs Jobs vs Invoices)**
+- **Quote Types & Pricing Logic**
+- **Job Statuses & Scheduling Rules**
+
+<Card title="Core Concepts (Quotes vs Jobs vs Invoices)" icon="sparkles" cta="The Main Functionalites">
+  
+</Card>
+
+<Card title="Quote Types & Pricing Logic" icon="sparkles" cta="How The Estimating Logic Works">
+  
+</Card>
+
+<Card title="Job Statuses & Scheduling Rules" cta="General Stuff About Scheduling">
+  
+</Card>
 
 <Note>
   **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
