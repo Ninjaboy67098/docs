@@ -1,0 +1,12 @@
+.nav-logo {
+  height: 30px;
+  width: 60px;
+}
+
+/* Also target the img inside nav-logo to ensure it scales properly */
+.nav-logo img,
+.nav-logo svg {
+  height: 30px !important;
+  width: 60px !important;
+  object-fit: contain;
+}
