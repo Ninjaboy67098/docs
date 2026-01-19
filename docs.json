@@ -78,7 +78,8 @@
   "logo": {
     "light": "/images/Screenshot2026-01-18at9.27.02PM.svg",
     "dark": "/logo/dark.svg",
-    "href": "https://estizee.com"
+    "href": "https://estizee.com",
+    "height": 50
   },
   "thumbnails": {
     "appearance": "dark",
