@@ -75,9 +75,13 @@
   "background": {
     "decoration": "windows"
   },
-  "description": "Estizee",
   "logo": {
     "light": "/images/Screenshot2026-01-18at9.27.02PM.svg",
-    "dark": "/images/Screenshot2026-01-13at6.11.34PM.svg"
+    "dark": "/images/Screenshot2026-01-13at6.11.34PM.svg",
+    "href": "https://estizee.app"
+  },
+  "thumbnails": {
+    "appearance": "dark",
+    "background": "/images/Screenshot2026-01-18at9.27.02PM.svg"
   }
 }
