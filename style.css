@@ -1,12 +1,52 @@
-.nav-logo {
-  height: 30px;
-  width: 60px;
-}
-
-/* Also target the img inside nav-logo to ensure it scales properly */
-.nav-logo img,
-.nav-logo svg {
+/* Force logo size - target navbar logo container and all children */
+.nav-logo,
+[class*="nav-logo"],
+[class*="logo"],
+header a[href*="estizee"],
+nav a[href*="estizee"] {
   height: 30px !important;
   width: 60px !important;
-  object-fit: contain;
+  max-height: 30px !important;
+  max-width: 60px !important;
+  display: inline-block !important;
+}
+
+/* Target ALL possible logo image/svg elements in navbar */
+.nav-logo img,
+.nav-logo svg,
+[class*="nav-logo"] img,
+[class*="nav-logo"] svg,
+[class*="logo"] img,
+[class*="logo"] svg,
+header a[href*="estizee"] img,
+header a[href*="estizee"] svg,
+nav a[href*="estizee"] img,
+nav a[href*="estizee"] svg,
+a[href*="estizee"] img,
+a[href*="estizee"] svg {
+  height: 30px !important;
+  width: 60px !important;
+  max-height: 30px !important;
+  max-width: 60px !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+/* Override any inline styles or height attributes */
+.nav-logo[style],
+[class*="nav-logo"][style],
+header a[href*="estizee"][style] {
+  height: 30px !important;
+  width: 60px !important;
+}
+
+/* Nuclear option - target by SVG viewBox or any logo-like element */
+header svg[viewBox],
+nav svg[viewBox],
+header img[src*="logo"],
+nav img[src*="logo"] {
+  height: 30px !important;
+  width: 60px !important;
+  max-height: 30px !important;
+  max-width: 60px !important;
 }
