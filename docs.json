@@ -76,10 +76,10 @@
     "decoration": "gradient"
   },
   "logo": {
-    "light": "/logo/light.svg",
+    "light": "/images/Screenshot2026-01-18at9.27.02PM.svg",
     "dark": "/logo/dark.svg",
     "href": "https://estizee.com",
-    "height": 200
+    "height": 50
   },
   "thumbnails": {
     "appearance": "dark",
