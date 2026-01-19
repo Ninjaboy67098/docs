@@ -73,12 +73,12 @@
     }
   },
   "background": {
-    "decoration": "windows"
+    "decoration": "gradient"
   },
   "logo": {
     "light": "/images/Screenshot2026-01-18at9.27.02PM.svg",
     "dark": "/logo/dark.svg",
-    "href": "https://estizee.app"
+    "href": "https://estizee.com"
   },
   "thumbnails": {
     "appearance": "dark",
