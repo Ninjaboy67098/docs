@@ -24,16 +24,11 @@
         }
       ]
     },
-    "products": [
-      {
-        "product": "Getting started",
-        "pages": [
-          "introduction",
-          "system-overview",
-          "guides/getting-started/business-setup",
-          "create-your-first-quote"
-        ]
-      }
+    "pages": [
+      "introduction",
+      "system-overview",
+      "guides/getting-started/business-setup",
+      "create-your-first-quote"
     ]
   },
   "navbar": {
