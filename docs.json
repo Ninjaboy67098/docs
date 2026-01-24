@@ -24,19 +24,14 @@
         }
       ]
     },
-    "tabs": [
+    "products": [
       {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "introduction",
-              "system-overview",
-              "guides/getting-started/business-setup",
-              "create-your-first-quote"
-            ]
-          }
+        "product": "Getting started",
+        "pages": [
+          "introduction",
+          "system-overview",
+          "guides/getting-started/business-setup",
+          "create-your-first-quote"
         ]
       }
     ]
