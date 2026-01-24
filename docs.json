@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "linden",
+  "theme": "palm",
   "name": "Estizee",
   "colors": {
     "primary": "#0e1c32",
@@ -75,7 +75,7 @@
   "background": {
     "decoration": "gradient"
   },
-  "logo": "/images/Logodocs.svg",
+  "logo": "/images/ChatGPTImageNov19,2025,02_53_45PM.png",
   "thumbnails": {
     "appearance": "dark"
   }
