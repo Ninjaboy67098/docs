@@ -120,7 +120,6 @@
             "icon": "circle-question",
             "pages": [
               "help-and-troubleshooting/common-issues",
-              "help-and-troubleshooting/pricing-doesnt-match-expectations",
               "help-and-troubleshooting/quotes-not-sending",
               "help-and-troubleshooting/calendar-conflicts",
               "help-and-troubleshooting/contact-support"
