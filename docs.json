@@ -1,3 +1,4 @@
+```json
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
@@ -106,8 +107,8 @@
             "group": "Legal & Compliance",
             "icon": "lock",
             "pages": [
-              "legal/data-privacy",
-              "legal/terms-of-use"
+              "legal/privacy-policy",
+              "legal/terms-and-conditions"
             ]
           }
         ]
@@ -146,15 +147,15 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
@@ -170,3 +171,4 @@
     "appearance": "dark"
   }
 }
+```
