@@ -29,126 +29,89 @@
         "tab": "Getting Started",
         "icon": "play",
         "pages": [
-          "introduction",
-          "system-overview",
-          "guides/getting-started/business-setup",
-          "create-your-first-quote"
+          "getting-started/introduction",
+          "getting-started/system-overview",
+          "getting-started/business-setup",
+          "getting-started/create-your-first-quote"
         ]
       },
       {
         "tab": "App Configuration",
+        "icon": "wrench",
         "pages": [
-          {
-            "group": "Business Settings",
-            "pages": [
-              "business-settings-overview",
-              "notifications-and-messaging",
-              "calendar-settings"
-            ]
-          },
-          {
-            "group": "Pricing Rules",
-            "pages": [
-              "commercial-pricing-rules",
-              "residential-pricing-rules",
-              "base-rates-and-goals",
-              "coupons-and-discounts"
-            ]
-          }
+          "app-configuration/business-settings-overview",
+          "app-configuration/base-rates-and-goals",
+          "app-configuration/residential-pricing-rules",
+          "app-configuration/commercial-pricing-rules",
+          "app-configuration/notifications-and-messaging",
+          "app-configuration/calendar-settings",
+          "app-configuration/coupons-and-discounts"
         ]
       },
       {
-        "tab": "Quotes & Pricing",
-        "icon": "file-invoice-dollar",
+        "tab": "Quoting & Pricing Logic",
+        "icon": "calculator",
         "pages": [
-          {
-            "group": "Quotes",
-            "pages": [
-              "turbo-quote-vs-advanced-quote",
-              "sharing-quotes",
-              "quote-expiration-rules",
-              "quote-conversion-rates",
-              "quote-to-invoice-flow",
-              "quotes-not-sending"
-            ]
-          },
-          {
-            "group": "Pricing",
-            "pages": [
-              "how-pricing-is-calculated",
-              "surcharges-and-multipliers-explained",
-              "fees-and-convenience-charges",
-              "manual-overrides-and-admin-pricing",
-              "pricing-doesnt-match-expectations"
-            ]
-          }
+          "quoting-and-pricing/turbo-quote-vs-advanced-quote",
+          "quoting-and-pricing/how-pricing-is-calculated",
+          "quoting-and-pricing/surcharges-and-multipliers-explained",
+          "quoting-and-pricing/manual-overrides-and-admin-pricing",
+          "quoting-and-pricing/quote-expiration-rules",
+          "quoting-and-pricing/sharing-quotes"
         ]
       },
       {
-        "tab": "Jobs & Calendar",
+        "tab": "Jobs & Scheduling",
         "icon": "calendar-check",
         "pages": [
-          {
-            "group": "Jobs",
-            "pages": [
-              "creating-and-editing-jobs",
-              "job-status-flow",
-              "assigning-team-members",
-              "upcoming-jobs-overview",
-              "rescheduling-and-cancellations"
-            ]
-          },
-          {
-            "group": "Calendar",
-            "pages": [
-              "calendar-overview",
-              "google-calendar-sync",
-              "apple-calendar-sync",
-              "calendar-conflicts"
-            ]
-          }
+          "jobs-and-scheduling/calendar-overview",
+          "jobs-and-scheduling/creating-and-editing-jobs",
+          "jobs-and-scheduling/assigning-team-members",
+          "jobs-and-scheduling/job-status-flow",
+          "jobs-and-scheduling/google-calendar-sync",
+          "jobs-and-scheduling/apple-calendar-sync",
+          "jobs-and-scheduling/rescheduling-and-cancellations"
         ]
       },
       {
-        "tab": "Payments & Reports",
+        "tab": "Invoices & Payments",
         "icon": "credit-card",
         "pages": [
-          {
-            "group": "Payments",
-            "pages": [
-              "online-payments",
-              "payment-statuses",
-              "receipts-and-customer-records"
-            ]
-          },
-          {
-            "group": "Reports",
-            "pages": [
-              "revenue-tracking",
-              "goal-performance"
-            ]
-          }
+          "invoices-and-payments/quote-to-invoice-flow",
+          "invoices-and-payments/online-payments",
+          "invoices-and-payments/payment-statuses",
+          "invoices-and-payments/fees-and-convenience-charges",
+          "invoices-and-payments/receipts-and-customer-records"
         ]
       },
       {
-        "tab": "Help & Legal",
+        "tab": "Reports & Business Insights",
+        "icon": "chart-mixed",
+        "pages": [
+          "reports-and-insights/revenue-tracking",
+          "reports-and-insights/quote-conversion-rates",
+          "reports-and-insights/goal-performance",
+          "reports-and-insights/upcoming-jobs-overview"
+        ]
+      },
+      {
+        "tab": "Help & Troubleshooting",
         "icon": "circle-question",
         "pages": [
-          {
-            "group": "Troubleshooting",
-            "pages": [
-              "common-issues",
-              "contact-support",
-              "feature-requests"
-            ]
-          },
-          {
-            "group": "Legal",
-            "pages": [
-              "data-privacy",
-              "terms-of-use"
-            ]
-          }
+          "help-and-troubleshooting/common-issues",
+          "help-and-troubleshooting/pricing-doesnt-match-expectations",
+          "help-and-troubleshooting/quotes-not-sending",
+          "help-and-troubleshooting/calendar-conflicts",
+          "help-and-troubleshooting/contact-support",
+          "help-and-troubleshooting/feature-requests"
+        ]
+      },
+      {
+        "tab": "Legal & Compliance",
+        "icon": "lock",
+        "pages": [
+          "legal/data-privacy",
+          "legal/terms-of-use"
         ]
       }
     ]
