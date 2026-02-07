@@ -24,9 +24,9 @@
         }
       ]
     },
-    "tabs": [
+    "groups": [
       {
-        "tab": "Getting Started",
+        "group": "Getting Started",
         "icon": "play",
         "pages": [
           "getting-started/introduction",
@@ -36,7 +36,7 @@
         ]
       },
       {
-        "tab": "App Configuration",
+        "group": "App Configuration",
         "icon": "wrench",
         "pages": [
           "app-configuration/business-settings-overview",
@@ -49,7 +49,7 @@
         ]
       },
       {
-        "tab": "Quoting & Pricing Logic",
+        "group": "Quoting & Pricing Logic",
         "icon": "calculator",
         "pages": [
           "quoting-and-pricing/turbo-quote-vs-advanced-quote",
@@ -61,7 +61,7 @@
         ]
       },
       {
-        "tab": "Jobs & Scheduling",
+        "group": "Jobs & Scheduling",
         "icon": "calendar-check",
         "pages": [
           "jobs-and-scheduling/calendar-overview",
@@ -74,7 +74,7 @@
         ]
       },
       {
-        "tab": "Invoices & Payments",
+        "group": "Invoices & Payments",
         "icon": "credit-card",
         "pages": [
           "invoices-and-payments/quote-to-invoice-flow",
@@ -85,7 +85,7 @@
         ]
       },
       {
-        "tab": "Reports & Business Insights",
+        "group": "Reports & Business Insights",
         "icon": "chart-mixed",
         "pages": [
           "reports-and-insights/revenue-tracking",
@@ -95,7 +95,7 @@
         ]
       },
       {
-        "tab": "Help & Troubleshooting",
+        "group": "Help & Troubleshooting",
         "icon": "circle-question",
         "pages": [
           "help-and-troubleshooting/common-issues",
@@ -107,7 +107,7 @@
         ]
       },
       {
-        "tab": "Legal & Compliance",
+        "group": "Legal & Compliance",
         "icon": "lock",
         "pages": [
           "legal/data-privacy",
