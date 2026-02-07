@@ -38,13 +38,117 @@
       {
         "tab": "App Configuration",
         "pages": [
-          "coupons-and-discounts",
-          "calendar-settings",
-          "notifications-and-messaging",
-          "commercial-pricing-rules",
-          "residential-pricing-rules",
-          "base-rates-and-goals",
-          "business-settings-overview"
+          {
+            "group": "Business Settings",
+            "pages": [
+              "business-settings-overview",
+              "notifications-and-messaging",
+              "calendar-settings"
+            ]
+          },
+          {
+            "group": "Pricing Rules",
+            "pages": [
+              "commercial-pricing-rules",
+              "residential-pricing-rules",
+              "base-rates-and-goals",
+              "coupons-and-discounts"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Quotes & Pricing",
+        "icon": "file-invoice-dollar",
+        "pages": [
+          {
+            "group": "Quotes",
+            "pages": [
+              "turbo-quote-vs-advanced-quote",
+              "sharing-quotes",
+              "quote-expiration-rules",
+              "quote-conversion-rates",
+              "quote-to-invoice-flow",
+              "quotes-not-sending"
+            ]
+          },
+          {
+            "group": "Pricing",
+            "pages": [
+              "how-pricing-is-calculated",
+              "surcharges-and-multipliers-explained",
+              "fees-and-convenience-charges",
+              "manual-overrides-and-admin-pricing",
+              "pricing-doesnt-match-expectations"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Jobs & Calendar",
+        "icon": "calendar-check",
+        "pages": [
+          {
+            "group": "Jobs",
+            "pages": [
+              "creating-and-editing-jobs",
+              "job-status-flow",
+              "assigning-team-members",
+              "upcoming-jobs-overview",
+              "rescheduling-and-cancellations"
+            ]
+          },
+          {
+            "group": "Calendar",
+            "pages": [
+              "calendar-overview",
+              "google-calendar-sync",
+              "apple-calendar-sync",
+              "calendar-conflicts"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Payments & Reports",
+        "icon": "credit-card",
+        "pages": [
+          {
+            "group": "Payments",
+            "pages": [
+              "online-payments",
+              "payment-statuses",
+              "receipts-and-customer-records"
+            ]
+          },
+          {
+            "group": "Reports",
+            "pages": [
+              "revenue-tracking",
+              "goal-performance"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Help & Legal",
+        "icon": "circle-question",
+        "pages": [
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "common-issues",
+              "contact-support",
+              "feature-requests"
+            ]
+          },
+          {
+            "group": "Legal",
+            "pages": [
+              "data-privacy",
+              "terms-of-use"
+            ]
+          }
         ]
       }
     ]
