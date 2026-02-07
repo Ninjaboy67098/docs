@@ -27,6 +27,7 @@
     "tabs": [
       {
         "tab": "General",
+        "icon": "question",
         "groups": [
           {
             "group": "Getting Started",
@@ -101,6 +102,7 @@
       },
       {
         "tab": "Legal & Compliance",
+        "icon": "toilet-paper-check",
         "groups": [
           {
             "group": "Legal & Compliance",
@@ -114,6 +116,7 @@
       },
       {
         "tab": "Help & Troubleshooting",
+        "icon": "brake-warning",
         "groups": [
           {
             "group": "Help & Troubleshooting",
