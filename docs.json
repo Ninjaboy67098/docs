@@ -24,11 +24,29 @@
         }
       ]
     },
-    "pages": [
-      "introduction",
-      "system-overview",
-      "guides/getting-started/business-setup",
-      "create-your-first-quote"
+    "tabs": [
+      {
+        "tab": "Getting Started",
+        "icon": "play",
+        "pages": [
+          "introduction",
+          "system-overview",
+          "guides/getting-started/business-setup",
+          "create-your-first-quote"
+        ]
+      },
+      {
+        "tab": "App Configuration",
+        "pages": [
+          "coupons-and-discounts",
+          "calendar-settings",
+          "notifications-and-messaging",
+          "commercial-pricing-rules",
+          "residential-pricing-rules",
+          "base-rates-and-goals",
+          "business-settings-overview"
+        ]
+      }
     ]
   },
   "navbar": {
