@@ -96,18 +96,6 @@
               "reports-and-insights/goal-performance",
               "reports-and-insights/upcoming-jobs-overview"
             ]
-          },
-          {
-            "group": "Help & Troubleshooting",
-            "icon": "circle-question",
-            "pages": [
-              "help-and-troubleshooting/common-issues",
-              "help-and-troubleshooting/pricing-doesnt-match-expectations",
-              "help-and-troubleshooting/quotes-not-sending",
-              "help-and-troubleshooting/calendar-conflicts",
-              "help-and-troubleshooting/contact-support",
-              "help-and-troubleshooting/feature-requests"
-            ]
           }
         ]
       },
@@ -120,6 +108,23 @@
             "pages": [
               "legal/data-privacy",
               "legal/terms-of-use"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Help & Troubleshooting",
+        "groups": [
+          {
+            "group": "Help & Troubleshooting",
+            "icon": "circle-question",
+            "pages": [
+              "help-and-troubleshooting/common-issues",
+              "help-and-troubleshooting/pricing-doesnt-match-expectations",
+              "help-and-troubleshooting/quotes-not-sending",
+              "help-and-troubleshooting/calendar-conflicts",
+              "help-and-troubleshooting/contact-support",
+              "help-and-troubleshooting/feature-requests"
             ]
           }
         ]
