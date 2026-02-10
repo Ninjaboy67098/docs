@@ -2,16 +2,3 @@
   height: 50px !important;
   width: auto !important;
 }
-
-/* Center the logo's parent container */
-*:has(> .nav-logo) {
-  width: 100% !important;
-  display: flex !important;
-  justify-content: center !important;
-}
-
-/* Center the grandparent container */
-*:has(> * > .nav-logo) {
-  display: flex !important;
-  justify-content: center !important;
-}
