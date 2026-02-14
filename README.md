@@ -44,6 +44,24 @@ To run the two separately: start `mint dev --port 3001` in one terminal, then `n
 
 Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
 
+### Password protection on the live site (docs.estizee.app) — free, no Mintlify Pro
+
+This repo includes **your own** auth proxy so the published docs show a login page first, without paying for Mintlify’s native auth.
+
+1. **Deploy the auth proxy to Vercel**
+   - Push this repo to GitHub (if needed), then go to [vercel.com](https://vercel.com) and **Import** this repository.
+   - In the project’s **Settings → Environment Variables**, add:
+     - `DOCS_PASSWORD` — the password users must enter (e.g. the one in your `.env`).
+     - `MINTLIFY_ORIGIN` — the Mintlify URL your docs are served from (e.g. `https://estizee.mintlify.app`). You can find it in [Mintlify Dashboard → Deployment / Custom domain](https://dashboard.mintlify.com) (it’s usually `https://<your-project-slug>.mintlify.app`).
+   - Deploy. Vercel will give you a URL like `docs-3-xxx.vercel.app`.
+
+2. **Point docs.estizee.app to Vercel**
+   - In Vercel: **Project → Settings → Domains** → add `docs.estizee.app` and follow the DNS instructions.
+   - In your DNS provider (where estizee.app is managed): add or update a **CNAME** for `docs` so that `docs.estizee.app` points to `cname.vercel-dns.com` (or the target Vercel shows). Remove any existing CNAME that pointed docs to Mintlify.
+
+3. **Result**
+   - Visiting **docs.estizee.app** (or any path like `/getting-started/introduction`) hits the proxy first. Unauthenticated users see the login page; after entering the correct password they can browse the docs. Use `/logout` to sign out.
+
 ## Need help?
 
 ### Troubleshooting
