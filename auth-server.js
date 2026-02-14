@@ -11,8 +11,8 @@ app.use(express.urlencoded({ extended: true }));
 const DOCS_PASSWORD = process.env.DOCS_PASSWORD;
 const COOKIE_NAME = 'docs_auth';
 const COOKIE_SECRET = process.env.COOKIE_SECRET || 'docs-session-secret-change-in-production';
-const AUTH_PORT = parseInt(process.env.AUTH_PORT || '8080', 10);
-const DOCS_TARGET = process.env.DOCS_TARGET || 'http://localhost:3000';
+const AUTH_PORT = parseInt(process.env.AUTH_PORT || '3000', 10);
+const DOCS_TARGET = process.env.DOCS_TARGET || 'http://localhost:3001';
 
 if (!DOCS_PASSWORD) {
   console.error('Missing DOCS_PASSWORD in .env. Add DOCS_PASSWORD=your_password to .env');
@@ -175,5 +175,5 @@ app.use(
 
 app.listen(AUTH_PORT, () => {
   console.log(`Auth gateway running at http://localhost:${AUTH_PORT}`);
-  console.log(`Make sure the docs are running: mint dev (default: http://localhost:3000)`);
+  console.log(`Start the docs on port 3001: mint dev --port 3001`);
 });

@@ -30,16 +30,15 @@ View your local preview at `http://localhost:3000`.
 
 ### Password-protected access
 
-The docs can be served behind a login page. Set up once:
+The docs can be served behind a login page so that opening the docs always shows the login first.
 
 1. Copy `.env.example` to `.env` and set `DOCS_PASSWORD` to your desired password (or keep the generated one in `.env`).
 2. Install dependencies: `npm install`
-3. Start the docs: `mint dev` (runs on port 3000)
-4. In another terminal, start the auth gateway: `npm run auth` (runs on port 8080)
+3. Run both the docs and the auth gateway: `npm run dev:protected`
 
-Open **http://localhost:8080** — you’ll see the login page. After entering the correct password, you can browse the documentation. The password is stored in `.env`; do not commit `.env` to git.
+Then open **http://localhost:3000** (not 3001). You’ll see the login page first; after entering the correct password, you can browse the documentation. The gateway runs on port 3000 and proxies to the docs on 3001, so **always use http://localhost:3000** to view the protected docs. The password is stored in `.env`; do not commit `.env` to git.
 
-Alternatively, run both the docs and the auth gateway with one command: `npm run dev:protected` (docs at 3000, gateway at 8080 — use http://localhost:8080 to access the protected docs).
+To run the two separately: start `mint dev --port 3001` in one terminal, then `npm run auth` in another. The auth gateway will listen on port 3000.
 
 ## Publishing changes
 

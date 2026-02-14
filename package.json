@@ -6,7 +6,7 @@
   "scripts": {
     "auth": "node auth-server.js",
     "dev": "mint dev",
-    "dev:protected": "concurrently \"mint dev\" \"node auth-server.js\""
+    "dev:protected": "concurrently \"mint dev --port 3001\" \"node auth-server.js\""
   },
   "dependencies": {
     "cookie-parser": "^1.4.6",
