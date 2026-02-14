@@ -131,8 +131,8 @@ app.get('/login', (req, res) => {
 });
 
 app.post('/login', (req, res) => {
-  const { password } = req.body || {};
-  if (password === DOCS_PASSWORD) {
+  const password = (req.body && req.body.password != null ? String(req.body.password) : '').trim();
+  if (password && password === DOCS_PASSWORD.trim()) {
     res.cookie(COOKIE_NAME, getAuthToken(), {
       httpOnly: true,
       maxAge: 7 * 24 * 60 * 60 * 1000,
