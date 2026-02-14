@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "almond",
   "appearance": {
     "default": "dark",
     "strict": true
@@ -130,6 +130,8 @@
               "help-and-troubleshooting/quotes-not-sending",
               "help-and-troubleshooting/calendar-conflicts",
               "help-and-troubleshooting/contact-support"
+
+              
             ]
           }
         ]
