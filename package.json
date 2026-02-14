@@ -1,0 +1,20 @@
+{
+  "name": "docs-auth-gateway",
+  "version": "1.0.0",
+  "description": "Password-protected gateway for Estizee documentation",
+  "main": "auth-server.js",
+  "scripts": {
+    "auth": "node auth-server.js",
+    "dev": "mint dev",
+    "dev:protected": "concurrently \"mint dev\" \"node auth-server.js\""
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
