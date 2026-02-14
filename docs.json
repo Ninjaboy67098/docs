@@ -175,5 +175,9 @@
   "logo": "/images/Image.png",
   "thumbnails": {
     "appearance": "dark"
+  },
+  "fonts": {
+    "family": "Poppins",
+    "weight": 500
   }
 }
