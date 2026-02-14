@@ -133,6 +133,12 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "FAQ",
+        "pages": [
+          "frequently-asked-questions"
+        ]
       }
     ]
   },
