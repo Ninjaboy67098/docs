@@ -41,7 +41,8 @@
               "getting-started/system-overview",
               "getting-started/business-setup",
               "getting-started/create-your-first-quote"
-            ]
+            ],
+            "openapi": "Up to Date"
           },
           {
             "group": "App Configuration",
